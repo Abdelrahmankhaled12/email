@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEGHOU - Email</title>
+    <!-- Preconnect to Google Fonts for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Load Roboto font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Global reset for consistent styling across browsers */
+        * {
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif !important;
+        }
+
+        /* Body styling */
+        body {
+            background-color: #ebf0f6;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Main email container */
+        .body {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            margin: 30px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            /* Ensures child elements respect border-radius */
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 767px) {
+            .body {
+                margin: 0 auto 30px;
+            }
+        }
+
+        /* Banner section */
+        .body .banner {
+            background-image: url(https://7596343.fs1.hubspotusercontent-na1.net/hubfs/7596343/Banner_editable-02.png);
+            background-position: right;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 200px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        /* Container inside the banner */
+        .body .banner .container {
+            margin: auto;
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        /* Logo image inside the banner */
+        .body .banner img {
+            width: 350px;
+            max-width: 100%;
+            /* Ensures the image is responsive */
+        }
+
+        /* Main content section */
+        .body .body_text {
+            padding: 20px;
+        }
+
+        /* Heading styles */
+        .body .body_text h1 {
+            color: #000000;
+            text-align: center;
+            margin-bottom: 2px;
+            font-size: 30px;
+        }
+
+        .body .body_text .subTitle {
+            text-align: center;
+            font-size: 28px;
+            color: #000000d6;
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+
+        .body .body_text h3 {
+            text-align: center;
+            font-size: 23px;
+            color: #000000;
+        }
+
+        /* Link button styling */
+        .body .body_text a {
+            background-color: #448189;
+            color: #ffffff;
+            width: fit-content;
+            display: block;
+            margin: 20px auto;
+            text-decoration: none;
+            padding: 12px 35px;
+            border-radius: 6px;
+            font-size: 20px;
+            transition: background-color 0.5s, color 0.5s;
+            border: 1px solid #448189;
+            font-weight: 500;
+        }
+
+        /* Hover effect for the button */
+        .body .body_text a:hover {
+            background-color: #ffffff;
+            color: #448189;
+        }
+
+        /* Paragraph styling */
+        .body .body_text .text p {
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        /* Subheading styling */
+        .body .body_text h2 {
+            text-align: center;
+            color: #000000;
+            font-size: 20px;
+        }
+
+        /* Unordered list styling */
+        .body .body_text ul {
+            margin-bottom: 35px;
+        }
+
+        .body .body_text ul li {
+            font-size: 17px;
+            margin: 10px 0;
+            color: #000000;
+        }
+
+        /* Footer section */
+        .footer {
+            max-width: 800px;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+        /* Footer paragraph styling */
+        .footer p {
+            text-align: center;
+            color: #455c74;
+            font-size: 20px;
+        }
+
+        /* Responsive adjustments for footer */
+        @media (max-width: 767px) {
+            .footer p {
+                font-size: 15px;
+            }
+        }
+
+        /* Footer list styling */
+        .footer ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            gap: 10px;
+            padding: 0;
+        }
+
+        .footer ul li a {
+            font-size: 20px;
+            color: #5097a6;
+        }
+
+        /* Responsive adjustments for footer links */
+        @media (max-width: 767px) {
+            .footer ul li a {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main email container -->
+    <div class="body">
+        <!-- Banner section -->
+        <div class="banner">
+            <div class="container">
+                <img src="https://7596343.fs1.hubspotusercontent-na1.net/hub/7596343/hubfs/Beghou-Logo-Light.png?width=1620&height=579&name=Beghou-Logo-Light.png"
+                    alt="Beghou Logo">
+            </div>
+        </div>
+        <!-- Main content section -->
+        <div class="body_text">
+            <h1>Is Your Commercial Data Infrastructure Ready For AI?</h1>
+            <p class="subTitle">Lessons Learned and Practical Next Steps for Life Sciences</p>
+            <h3>Join our webinar on Wednesday, March 26th at 12PM ET / 9 AM PT</h3>
+            <!-- Register button -->
+            <a href="https://beghouconsulting-7596343.hs-sites.com/beghou-webinar-registration?utm_campaign=9023789-Q1%20Webinar%202025&utm_medium=email&_hsenc=p2ANqtz-92i98-Xc5JuIACNKcvrJICMB229Q4lLI4hObiCoXkOqhFtk9jROhd32_nsKJIBJxVXNbDihcZyr7SfDqPeNEvFFeJ6WFQXGXLiCGO-uS7vZe76alc&_hsmi=2&utm_content=2&utm_source=hs_email"
+                target="_blank">
+                Register Here
+            </a>
+            <!-- Text content -->
+            <div class="text">
+                <p>The recent surge in AI pilots has exposed inefficiencies in life sciences companies' commercial data
+                    foundations. As a result, many companies are revisiting their data management approach in 2025. But
+                    what exactly does that mean, how do you know where to invest, and how can AI help you with the
+                    precision needed in today's environment?</p>
+                <p>Join our webinar to hear from Beghou Consulting and Databricks experts, who will provide guidance
+                    based on real-life examples to help you:</p>
+            </div>
+            <!-- List of key points -->
+            <ul>
+                <li>Assess where your data infrastructure currently stands.</li>
+                <li>Fix your foundation to improve AI-driven insights.</li>
+                <li>Automate data quality, validation, and metadata enrichment.</li>
+                <li>Prioritize investments for quick wins.</li>
+                <li>Build lasting trust in AI for greater adoption within your company.</li>
+            </ul>
+            <!-- Join webinar button -->
+            <a href="https://beghouconsulting-7596343.hs-sites.com/beghou-webinar-registration?utm_campaign=9023789-Q1%20Webinar%202025&utm_medium=email&_hsenc=p2ANqtz-_9E9w0faSofDL23SkU-kv-407CR-Erix2GO5cwzrUvyH3IgZJ6J4oKIPwucf3cwhVWzxizVTaZ0cLzjSN9i1knOCUKNSB-U3ee3GJMZkIplY_I1gA&_hsmi=2&utm_content=2&utm_source=hs_email"
+                target="_blank">Join the Webinar</a>
+            <h2>Can't make it? Still sign up, and we'll share the slides and recording afterward.</h2>
+        </div>
+    </div>
+    <!-- Footer section -->
+    <div class="footer">
+        <p>Beghou Consulting, 1880 Oak Avenue, Suite 200, Evanston, IL, 60201, USA, +1 847.864.5480</p>
+        <ul>
+            <li><a href="https://beghouconsulting.com/privacypolicy/" target="_blank">Unsubscribe</a></li>
+            <li><a href="https://beghouconsulting.com/privacypolicy/" target="_blank">Manage Preferences</a></li>
+            <li><a href="https://beghouconsulting.com/privacypolicy/" target="_blank">Privacy Policy</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
